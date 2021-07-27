@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<EditForm Model="Model">
+    <DataAnnotationsValidator />
+
+    <PrimaryInput @bind-Value="Model.Name"/>
+
+
+    <InputText @bind-Value="Model.Name"/>
+
+</EditForm>
+
+@code {
+
+    MyModel Model { get; set; } = new MyModel();
+} 
